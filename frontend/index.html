@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>RWKV-Runner</title>
   <link href="./src/assets/images/logo.png" rel="icon" type="image/x-icon">
-</head>
-<body>
-<div id="root"></div>
-<script src="./src/main.tsx" type="module"></script>
-</body>
-</html>
+  <style>
+    /* 定义自定义字体 */
+    @font-face {
+      font-family: '钉钉进步体';
+      src: url('assets/font/钉钉进步体.ttf')
+    }
 
+    /* 全局修改字体样式 */
+    * {
+      font-family: '钉钉进步体';
+      /* 设置字体为自定义字体，如果没有则使用 Arial，再没有则使用 sans-serif 字体 */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="./src/main.tsx" type="module"></script>
+</body>
+
+</html>
